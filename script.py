@@ -7,7 +7,7 @@ import random
 stream_name = 'SensorData'
 region_name = 'us-east-1'
 
-kinesi_client = boto3.client('kinesis', region_name=region_name)
+kinesis_client = boto3.client('kinesis', region_name=region_name)
 
 def generate_random_data():
     return {

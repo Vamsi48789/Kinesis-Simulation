@@ -3,7 +3,7 @@ import boto3
 import json
 import time
 import random
-
+                            # Please chage the stream_name what you mentioned while you do practice
 stream_name = 'SensorData'
 region_name = 'us-east-1'
 

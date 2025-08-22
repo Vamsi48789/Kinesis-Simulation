@@ -21,7 +21,7 @@ def send_data_to_kinesis():
         data = generate_random_data()
         partition_key = str(data['sensor_id'])
         print(f"Sending data: {data}")
-        kinesi_client.put_record(
+        kinesis_client.put_record(
             StreamName=stream_name,
             Data=json.dumps(data),
             PartitionKey=str(data['sensor_id'])
